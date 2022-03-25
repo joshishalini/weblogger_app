@@ -16,7 +16,7 @@ class Parser
 			unless page && ip
 				raise "Wrong file."
 			end
-			if !@data[page][:ip].include?(ip)
+			unless @data[page][:ip].include?(ip)
 				@data[page][:ip].push(ip)
 			end
 			@data[page][:count] = @data[page][:count] + 1 
