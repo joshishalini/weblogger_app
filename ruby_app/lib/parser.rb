@@ -13,6 +13,9 @@ class Parser
 	def parse
 		File.open(@path).each do |row|
 			page, ip = row.split(" ")
+			unless page && ip
+				raise "Wrong file."
+			end
 			if !@data[page][:ip].include?(ip)
 				@data[page][:ip].push(ip)
 			end

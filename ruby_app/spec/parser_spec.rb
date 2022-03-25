@@ -21,6 +21,15 @@ RSpec.describe Parser do
     end 
   end
 
+  context "When file present" do
+    let(:path) { 'spec/fixtures/no_webserver.log' }
+
+    it "Does raises an error for wrong file" do
+      parser
+      expect { parser.parse }.not_to raise_error(RuntimeError, "Wrong file.")
+    end 
+  end
+
   describe '#parse' do
     before do
       parser
