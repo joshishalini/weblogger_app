@@ -22,16 +22,30 @@
 2. and then run ruby lib/parser.rb webserver.log
 3. You will get following output
 -------------------- list of webpages with most unique page --------------------
+
+
 /index 23 Unique views
+
 /home 23 Unique views
+
 /contact 23 Unique views
+
 /help_page/1 23 Unique views
+
 /about/2 22 Unique views
+
 /about 21 Unique views
+
 -------------------- list of webpages with most page views page --------------------
+
 /about/2 90 Unique views
+
 /contact 89 Unique views
+
 /index 82 Unique views
+
 /about 81 Unique views
+
 /help_page/1 80 Unique views
+
 /home 78 Unique views 
